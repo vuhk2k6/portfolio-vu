@@ -1,0 +1,106 @@
+.main {
+  & .block-1 {
+    & .covibe__heading {
+      margin-top: 12.8rem;
+      margin-bottom: 1.2rem;
+    }
+    & .covibe__content {
+      width: 37.5rem;
+    }
+  }
+  & .block-2 {
+    & .info {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-top: 11.2rem;
+      & .md__heading {
+        margin-bottom: 1.2rem;
+      }
+      &__text {
+        font-size: 2rem;
+        line-height: 3rem;
+        color: $heading-color;
+        letter-spacing: -0.5px;
+      }
+    }
+  }
+  & .block-3 {
+    margin-top: 29rem;
+  }
+  & .switch-launch {
+    display: inline-block;
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-weight: 700;
+    color: $text-color;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    border-bottom: 2px solid $border-color;
+    margin-top: 8.8rem;
+    margin-bottom: 11.2rem;
+  }
+  & .block-4 {
+    background-image: url(../img/main-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 76rem;
+  }
+  .block-5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 23.4rem 9.6rem 21.6rem 9.6rem;
+    & .item-1 {
+      &-img {
+        width: 50.6rem;
+        height: 76.3rem;
+        border-radius: 0.4rem;
+        object-fit: cover;
+      }
+    }
+    & .item-4 {
+      display: flex;
+      justify-content: flex-end;
+      &-img {
+        width: 50.6rem;
+        height: 76.3rem;
+        border-radius: 0.4rem;
+        object-fit: cover;
+      }
+    }
+    & .item-2,
+    & .item-3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  & .block-6 {
+    margin-bottom: 12.8rem;
+  }
+  & .block-7 {
+    margin-bottom: 24.4rem;
+    & img {
+      width: 100%;
+      height: 674px;
+      object-fit: cover;
+    }
+  }
+  & .block-8 {
+    text-align: center;
+    & a {
+      color: $heading-color;
+      font-size: 3.2rem;
+      line-height: 5.4rem;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: capitalize;
+      display: inline-block;
+      border-bottom: 2px solid $heading-color;
+      margin-bottom: 15rem;
+    }
+  }
+}
