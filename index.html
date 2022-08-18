@@ -14,8 +14,9 @@
     <script src="./assets/aos-master/dist/aos.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./assets/main.js"></script>
   </head>
-  <body> 
+  <body id="body">
     <div class="work_case" id="work_case"> 
       <div class="work__case-container"> 
         <div class="work_header"> 
@@ -23,12 +24,12 @@
             <div class="grid wide"> 
               <div class="header__container"> 
                 <div class="header__logo"> <img class="header__logo-img" src="./assets/img/Logos.png" alt=""></div>
-                <div class="header__navigation"> <a class="header__navigation-link home-btn" href="">Home</a><a class="header__navigation-link work-btn" href="#work_case">Work</a><a class="header__navigation-link contact-btn" href="">Contact</a></div>
+                <div class="header__navigation hide-on-mobile"> <a class="header__navigation-link home-btn" href="">Home</a><a class="header__navigation-link work-btn" href="#work_case">Work</a><a class="header__navigation-link contact-btn" href="">Contact</a></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="main"> 
+        <div class="work__main"> 
           <div class="block-1"> 
             <div class="grid wide"> 
               <h4 class="md__heading covibe__heading">Covibe</h4>
@@ -97,7 +98,7 @@
         <div class="grid wide"> 
           <div class="header__container"> 
             <div class="header__logo"> <img class="header__logo-img" src="./assets/img/Logos.png" alt=""></div>
-            <div class="header__navigation hide-on-mobile"><a class="header__navigation-link home-btn" href="">Home</a><a class="header__navigation-link work-btn" href="#work_case">Work</a><a class="header__navigation-link contact-btn" href="">Contact</a></div>
+            <div class="header__navigation hide-on-mobile"><a class="header__navigation-link home-btn" href="#body">Home</a><a class="header__navigation-link work-btn" href="#work_case">Work</a><a class="header__navigation-link contact-btn" href="">Contact</a></div>
           </div>
         </div>
       </div>
@@ -111,16 +112,16 @@
                   <ion-icon name="mail-outline"></ion-icon><span>nguyenvanvuhkht@gmail.com</span></a></button>
             </div>
             <div class="home__img-box"> <img class="home__img" src="./assets/img/img1.png" alt=""></div>
-          </div><a class="switch-page" href="" data-aos="fade-right" data-aos-duration="1500"><img src="./assets/img/Arrow 1.png" alt=""><span>Featured Work</span></a>
+          </div><a class="switch-page" href="" data-aos="fade-up" data-aos-duration="1500"><img src="./assets/img/Arrow 1.png" alt=""><span>Featured Work</span></a>
           <div class="work"> 
             <div class="row"> 
               <div class="l-6 l-12"> 
-                <div class="work__item work__item-1" data-aos="fade-right" data-aos-duration="1500"> <img class="work__img" src="./assets/img/work1.png" alt=""><span>in version</span></div>
-                <div class="work__item" data-aos="fade-up" data-aos-duration="3000"> <img class="work__img" src="./assets/img/work2.png" alt=""></div>
+                <div class="work__item work__item-1" data-aos="flip-right" data-aos-duration="1500"> <img class="work__img" src="./assets/img/work1.png" alt=""><span>in version</span></div>
+                <div class="work__item" data-aos="flip-left" data-aos-duration="3000"> <img class="work__img" src="./assets/img/work2.png" alt=""></div>
               </div>
               <div class="l-6 l-12">
-                <div class="work__item" data-aos="fade-left" data-aos-duration="1500"> <img class="work__img" src="./assets/img/work3.png" alt=""></div>
-                <div class="work__item" data-aos="fade-up" data-aos-duration="3000"> <img class="work__img" src="./assets/img/work4.png" alt=""></div>
+                <div class="work__item" data-aos="flip-left" data-aos-duration="1500"> <img class="work__img" src="./assets/img/work3.png" alt=""></div>
+                <div class="work__item" data-aos="flip-right" data-aos-duration="3000"> <img class="work__img" src="./assets/img/work4.png" alt=""></div>
               </div>
             </div>
           </div>
@@ -138,9 +139,9 @@
           <div class="project"> 
             <h3 class="primary__heading">Personal Projects</h3>
             <div class="project__container"> 
-              <div class="project__item" data-aos="fade-right" data-aos-duration="2500"> <img class="project__item-img" src="./assets/img/project1.png" alt=""></div>
-              <div class="project__item" data-aos="fade-up" data-aos-duration="2500"> <img class="project__item-img" src="./assets/img/project2.png" alt=""></div>
-              <div class="project__item" data-aos="fade-left" data-aos-duration="2500"> <img class="project__item-img" src="./assets/img/project3.png" alt=""></div>
+              <div class="project__item" data-aos="flip-right" data-aos-duration="2500"> <img class="project__item-img" src="./assets/img/project1.png" alt=""></div>
+              <div class="project__item" data-aos="flip-up" data-aos-duration="2500"> <img class="project__item-img" src="./assets/img/project2.png" alt=""></div>
+              <div class="project__item" data-aos="flip-left" data-aos-duration="2500"> <img class="project__item-img" src="./assets/img/project3.png" alt=""></div>
             </div>
           </div>
           <div class="contact"> 
@@ -157,8 +158,15 @@
           <div class="footer__social"> <a class="footer__social-link" href=""> <img class="footer__social-icon" src="./assets/img/Group1.png" alt=""></a><a class="footer__social-link" href=""> <img class="footer__social-icon" src="./assets/img/Group2.png" alt=""></a><a class="footer__social-link" href=""> <img class="footer__social-icon" src="./assets/img/Group3.png" alt=""></a><a class="footer__social-link" href=""> <img class="footer__social-icon" src="./assets/img/Group4.png" alt=""></a><a class="footer__social-link" href=""> <img class="footer__social-icon" src="./assets/img/Group5.png" alt=""></a></div>
         </div>
       </div>
-    </div><a class="back-header" href="#header"> 
+    </div><a class="back-header" href="#body"> 
       <ion-icon name="rocket-outline"></ion-icon></a>
+    <div class="nav__mobile" id="openmenu"> 
+      <ul class="nav-list"> 
+        <li class="nav__item"> <a class="nav__item-link" href="#body">Home </a></li>
+        <li class="nav__item"> <a class="nav__item-link" href="#work_case">Work </a></li>
+        <li class="nav__item"> <a class="nav__item-link" href="">Contact </a></li>
+      </ul>
+    </div><a class="nav-menu hide-on-pc" href="#openmenu"><img class="menu-icon" src="./assets/img/menu.png" alt=""></a>
     <script>AOS.init();</script>
   </body>
 </html>
